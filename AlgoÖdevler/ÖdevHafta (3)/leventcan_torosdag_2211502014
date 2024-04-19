@@ -1,0 +1,68 @@
+public class Carpim {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Birinci sayıyı girin: ");
+        int sayi1 = scanner.nextInt();
+
+        System.out.print("İkinci sayıyı girin: ");
+        int sayi2 = scanner.nextInt();
+
+        int carpim = sayi1 * sayi2;
+
+        System.out.println("İki sayının çarpımı: " + carpim);
+    }
+}
+
+--------------------------------5 adet do while örneği --------------------------------------------
+
+1) 1 den 10 a kadar sayıları yadzırma
+
+int x = 1;
+do {
+    System.out.println(x);
+    x++;
+} while (x <= 10);
+
+--------------------------------------------------------
+2) 100 e kadar çift sayıları ekrana yazdırma 
+
+int i = 1;
+do {
+    if (i % 2 == 0) {
+        System.out.println(i);
+    }
+    i++;
+} while (i <= 100);
+---------------------------------------------------------
+3)  1den kullanıcının girdiği değere kadar toplama
+
+Scanner scanner = new Scanner(System.in);
+System.out.print("Bir sayı giriniz: ");
+int sayi = scanner.nextInt();
+
+int toplam = 0;
+int i = 1;
+do {
+    toplam += i;
+    i++;
+} while (i <= sayi);
+
+System.out.println("1'den " + sayi + "'e kadar olan sayıların toplamı: " + toplam);
+-----------------------------------------------------------
+4)Kullanıcıdan alınan bir sayının tersini ekrana yazdırma
+
+Scanner scanner = new Scanner(System.in);
+System.out.print("Bir sayı girin: ");
+int sayi = scanner.nextInt();
+
+int tersi = 0;
+do {
+    tersi = tersi * 10 + sayi % 10;
+    sayi /= 10;
+} while (sayi != 0);
+
+System.out.println("Girilen sayının tersi: " + tersi);
+--------------------------------------------------------------
+
+
